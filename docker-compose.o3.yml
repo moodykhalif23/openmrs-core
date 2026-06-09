@@ -57,6 +57,7 @@ services:
             timeout: 5s
         volumes:
             - openmrs-data:/openmrs/data
+            - ./o3-empty-config:/openmrs/distribution/openmrs_config:ro
 
     db:
         image: mariadb:10.11.7
